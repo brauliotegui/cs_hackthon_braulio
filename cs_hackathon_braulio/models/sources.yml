@@ -1,0 +1,30 @@
+version: 2
+sources:
+  - name: cs_hackathon_source_data_salesforce
+    database: y42-solution-engineering
+    schema: cs_hackathon_source_data_salesforce
+    tables:
+      - name: SF_ACCOUNTS
+      - name: SF_CONTACTS
+      - name: SF_OPPORTUNITIES
+      - name: SF_Y42_ORGS
+      - name: SF_Y42_ORGS_V2
+  - name: cs_hackathon_braulio
+    database: y42-solution-engineering
+    schema: cs_hackathon_braulio
+    tables:
+      - name: src_segment_historical_pages
+      - name: src_segment_pages
+      - name: src_zendesk_ticket_metrics
+      - name: src_zendesk_tickets
+      - name: src_job_info_service_job_step
+      - name: mrt_sf_accounts
+      - name: mrt_sf_customers
+  - name: vdemo_public_cshackathoneumultiregion_main
+    database: y42-solution-engineering
+    schema: vdemo_public_cshackathoneumultiregion_main
+    tables:
+      - name: Integrations_Y42_Analytics_Integrations_src_job_info_service_job_info_service_public_latest_job
+      - name: Integrations_Y42_Analytics_Integrations_src_job_info_service_job_info_service_public_job_1
+      - name: Integrations_Y42_Analytics_Integrations_src_zendesk_organizations
+      - name: Integrations_Y42_Analytics_Integrations_src_zendesk_ticket_audits
